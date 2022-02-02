@@ -1,0 +1,17 @@
+/rest-model/build/
+/.gradle/
+**/build/
+/eureka/build/
+/gateway/build/
+**/application-local.yaml
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+**/out/
+
+### generated sorces ###
+**/generated/**
+.swagger-codegen
