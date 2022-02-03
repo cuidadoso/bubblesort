@@ -10,7 +10,7 @@ class bublesort {
             while (!sorted) {
                 sorted = true
                 for (i in 1 until this.size) {
-                    if (this[i - 1] as Comparable<Any> > this[i] as Comparable<*>) {
+                    if (this[i - 1] as Comparable<Any> > this[i]) {
                         this.swap(i - 1, i)
                         sorted = false
                     }
