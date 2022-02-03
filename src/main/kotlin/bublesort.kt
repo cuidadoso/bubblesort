@@ -10,7 +10,7 @@ class bublesort {
             while (!sorted) {
                 sorted = true
                 for (i in 1 until this.size) {
-                    if (this[i - 1] isGreaterThan this[i]) {
+                    if (this[i - 1] as Comparable<Any> > this[i] as Comparable<*>) {
                         this.swap(i - 1, i)
                         sorted = false
                     }
@@ -25,11 +25,4 @@ class bublesort {
         }
     }
 
-}
-
-private infix fun Any.isGreaterThan(second: Any): Boolean = when (second) {
-    is Int -> { (this as Int) > second }
-    is String -> { (this as String) > second }
-    is Double -> { (this as Double) > second }
-    else -> { false }
 }
